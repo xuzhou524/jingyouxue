@@ -1,0 +1,7 @@
+{
+  "name": "school",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
