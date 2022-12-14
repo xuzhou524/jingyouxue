@@ -31,7 +31,7 @@
 			style="background-color: #FFFFFF;">
 			<text class="font-medium" style="font-size: 30rpx;">学校地址</text>
 			<view class="d-flex j-sb a-center">
-				<view class="d-flex flex-col mt-22 mr-22" style="font-size: 26rpx;flex-shrink: 0;">
+				<view class="d-flex flex-col mt-22 mr-22" style="font-size: 26rpx;flex-shrink: 0; max-width: 580rpx;">
 					<text style="line-height: 50rpx;">
 						{{ schooldetail.city + schooldetail.county + schooldetail.address }}
 					</text>
@@ -42,7 +42,7 @@
 						距离您{{ schooldetail.distance }}m
 					</text>
 				</view>
-				<view class="d-flex flex-col a-center flex-1" @click="goCall">
+				<view class="d-flex flex-col a-center" @click="goCall">
 					<image style="width: 40rpx; height: 40rpx;" src="/static/school/phone.png"></image>
 					<text style="font-size: 24rpx;color: #666666;margin-top: 5rpx;">电话</text>
 				</view>

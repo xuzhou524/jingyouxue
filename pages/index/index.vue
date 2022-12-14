@@ -1,10 +1,10 @@
 <template>
-	<view>
+	<view class="pb-52">
 		<view v-for="item in schoolList" :key="item.id">
 			<view class="d-flex ml-22 mr-22 mt-22 border-radius-22 pt-22 pl-22 pb-22 pr-22" style="background-color: #FFFFFF;" @click="goDetail(item)">
 				<image class="mr-22" style="width: 150rpx; height: 150rpx;border-radius: 10rpx;" :src="item.logo ? item.logo : '/static/school/defaultLogin.png'"></image>
 				<view class="d-flex flex-col j-sb" style="width: 490rpx;">
-					<view class="font-30 title-color">
+					<view class="font-30 title-color truncate">
 						{{ item.name }}
 					</view>
 					<view class="d-flex font-22">
